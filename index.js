@@ -1,7 +1,7 @@
 'use strict';
 
 require('dotenv').config();
-const server = require('./lib/server');
+const server = require('./lib/app');
 const mongoose = require('mongoose');
 
 const options = {
@@ -10,6 +10,8 @@ const options = {
   useUnifiedTopology: true,
 };
 
-mongoose.connect(process.env.MONGODB_URI, options);
+mongoose
+  .connect(process.env.MONGODB_URI, options)
+  .catch(err => console.log(err));
 
 server.start(process.env.PORT);
