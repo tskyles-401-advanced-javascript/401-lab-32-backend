@@ -1,0 +1,36 @@
+{
+  "name": "401-lab-32-backend",
+  "version": "1.0.0",
+  "description": "Backend API for lab 32 ToDo App",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tskyles-401-advanced-javascript/401-lab-32-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tskyles-401-advanced-javascript/401-lab-32-backend/issues"
+  },
+  "homepage": "https://github.com/tskyles-401-advanced-javascript/401-lab-32-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "express": "^4.17.1",
+    "jest": "^25.1.0",
+    "mongoose": "^5.9.2",
+    "morgan": "^1.9.1"
+  }
+}
